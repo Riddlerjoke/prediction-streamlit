@@ -1,0 +1,42 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/predict
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Gender": 0,
+  "Age": 0,
+  "PhysicalActivityLevel": 0,
+  "HeartRate": 0,
+  "DailySteps": 0,
+  "BloodPressure_high": 0,
+  "BloodPressure_low": 0,
+  "SleepDisorder": 0
+}
+
+
+###
+POST http://127.0.0.1:8000/predict2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "PhysicalActivityLevel": 0,
+  "HeartRate": 0,
+  "DailySteps": 0,
+  "SleepDisorder": 0
+}
+
+
+
